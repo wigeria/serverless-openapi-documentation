@@ -144,7 +144,7 @@ export class DefinitionGenerator {
       operationObj.deprecated = true;
     }
 
-    if (operationObj.requestBody) {
+    if (documentationConfig.requestBody) {
       operationObj.requestBody = this.getRequestBodiesFromConfig(documentationConfig);
     }
 
